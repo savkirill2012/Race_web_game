@@ -4,16 +4,24 @@ Here my realization of simple web race game from BrickGame
 
 How to start on localhost
 
-web
-port ougth to be 5173
-```
-cd src/web_gui
-npm run dev 
-```
-
 server 
 port ougth to be 8000
 ```
-cd src/server
-gunicorn -k uvicorn.workers.UvicornWorker main:app
+make build_server
 ```
+
+open on different terminal
+
+web
+port ougth to be 5173
+```
+make build_frontend
+```
+
+# Start game in web
+
+Open in browser http://localhost:5173/
+
+you will see 
+
+![](./images/web_ui.png)

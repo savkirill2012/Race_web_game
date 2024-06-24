@@ -1,9 +1,9 @@
 [tool.poetry]
-name = "brick-game"
+name = "server"
 version = "0.1.0"
 description = ""
 authors = ["savkirill2012 <savkirill2012@gmail.com>"]
-readme = "README.md"
+readme = "../README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
