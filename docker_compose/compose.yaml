@@ -1,0 +1,22 @@
+version: latest
+
+services:
+  server:
+    build: 
+      context: ../src/server/
+      dockerfile: Dockerfile
+    container_name: server
+    command: 'sh start_server.sh'
+    ports:
+      - "8000:8000"
+  
+  web_gui:
+    build:
+      context: ../src/web_gui/
+      dockerfile: Dockerfile
+    container_name: web_gui
+    command: 'sh start_web.sh'
+    ports:
+      - "5173:5173"
+    depends_on:
+      - server

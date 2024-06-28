@@ -1,0 +1,1 @@
+cd app/ && gunicorn -b :8000 -k uvicorn.workers.UvicornWorker main:app
